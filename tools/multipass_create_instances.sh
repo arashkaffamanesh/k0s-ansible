@@ -22,6 +22,9 @@ users:
     shell: /usr/bin/bash
     ssh_authorized_keys:
       - $( cat ~/.ssh/id_*.pub )
+bootcmd:
+- printf "[Resolve]\nDNS=8.8.8.8" > /etc/systemd/resolved.conf
+- [systemctl, restart, systemd-resolved]
 EOF
 
 for ((i = 1 ; i <= "${NUMBER_OF_VMS}" ; i++)); do

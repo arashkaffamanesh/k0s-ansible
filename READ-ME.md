@@ -1,10 +1,4 @@
-# Creating a cluster with Ansible Playbook
-
-Source:
-
-https://www.bookstack.cn/read/k0s-0.11.0-en/5ddc2eceb7faadb0.md
-
-https://docs.k0sproject.io/main/examples/ansible-playbook/
+# Creating a k0s HA Kubernetes cluster with Ansible Playbook
 
 ## TL;DR
 
@@ -34,3 +28,15 @@ export KUBECONFIG=inventory/multipass/artifacts/k0s-kubeconfig.yml
 
 k get nodes
 ```
+
+## Related resources
+
+### Origin Repo
+
+https://github.com/movd/k0s-ansible
+
+### Other resources
+
+https://www.bookstack.cn/read/k0s-0.11.0-en/5ddc2eceb7faadb0.md
+
+https://docs.k0sproject.io/main/examples/ansible-playbook/
